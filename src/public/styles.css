@@ -35,7 +35,7 @@ h2 {
 img { 
   max-width: 100%;
   height: auto;
-  max-height: 320pt;
+  max-height: 300pt;
   object-fit: cover;
   width: 100%;
   display: block;
