@@ -17,8 +17,8 @@
           {{ content | safe }}
         </div>
       </section>
-      {% for text in collections.text %}
-        <section>
+      {% for text in collections.text | reverse %}
+        <section class="text">
           <div class="text-info">
             <h2>
               {{ text.data.title }}
@@ -35,6 +35,8 @@
           </div>
 
           {{ text.templateContent | safe }}
+          
+          <br>
         </section>
       {% endfor %}
     </main>
