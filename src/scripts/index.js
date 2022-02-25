@@ -18,7 +18,7 @@ Bindery.makeBook(
       Bindery.PageBreak({ selector: 'h1', position: 'after', continue: 'right' }),
       Bindery.PageBreak({ selector: 'h2', position: 'before', continue: 'right' }),
       Bindery.PageBreak({ selector: '.text', position: 'before', continue: 'right' }),
-      Bindery.PageBreak({ selector: 'br', position: 'after', continue: 'next' }),
+      Bindery.PageBreak({ selector: '.break', position: 'both', continue: 'next' }),
       Bindery.PageBreak({ selector: 'figure', position: 'both', continue: 'next' }),
       Bindery.RunningHeader({
         render: (pageInfo) => {

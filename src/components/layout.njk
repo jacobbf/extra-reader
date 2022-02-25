@@ -35,8 +35,11 @@
           </div>
 
           {{ text.templateContent | safe }}
-          
-          <br>
+
+
+          {% if loop.index != collections.text.length %}
+            <div class="break"></div>
+          {% endif %}
         </section>
       {% endfor %}
     </main>
