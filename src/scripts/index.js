@@ -12,13 +12,22 @@ Bindery.makeBook(
   { 
     content: '#content',
     pageSetup: {
-      margin: { top: '24pt', inner: '24pt', outer: '24pt', bottom: '32pt' },
+      margin: { top: '48pt', inner: '24pt', outer: '24pt', bottom: '32pt' },
     },
     rules: [
       Bindery.PageBreak({ selector: 'h1', position: 'after', continue: 'right' }),
       Bindery.PageBreak({ selector: 'h2', position: 'before', continue: 'right' }),
       Bindery.PageBreak({ selector: 'figure', position: 'before', continue: 'next' }),
       Bindery.PageBreak({ selector: 'figure', position: 'after', continue: 'next' }),
+      Bindery.RunningHeader({
+        render: (pageInfo) => {
+          if(!pageInfo.isEmpty && pageInfo.number != 1) {
+            return `<div class="header">${pageInfo.number}</div>`
+          } else {
+            return ''
+          }
+        }
+      }),
       emptyPageRule
     ]
   }

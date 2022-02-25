@@ -5,13 +5,15 @@ body {
 }
 
 h1 {
-  font-size: 30pt;
+  font-size: 48pt;
   line-height: 1;
   text-align: center;
   font-family: 'Garamon(d/t)', serif;
+  font-weight: 400;
 }
 
 h2 {
+  margin-top: 2pt;
   font-weight: inherit;
   text-align: center;
   font-size: 16pt;
@@ -50,6 +52,16 @@ cite {
   display: block;
 }
 
+.📖-running-header {
+  right: var(--bindery-margin-outer);
+  left: var(--bindery-margin-inner);
+}
+
+.📖-running-header  .header {
+  text-align: center;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+ 
 .text-source {
   display: block;
   margin-top: .25em;
