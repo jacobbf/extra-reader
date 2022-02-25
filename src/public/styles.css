@@ -1,0 +1,71 @@
+body {
+  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 30pt;
+  line-height: 1;
+  text-align: center;
+  font-family: 'Garamon(d/t)', serif;
+}
+
+h2 {
+  font-weight: inherit;
+  text-align: center;
+  font-size: 16pt;
+  line-height: 1.3;
+  font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+}
+
+img { 
+  max-width: 100%;
+  height: auto;
+  max-height: 320pt;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+}
+
+cite {
+  text-align: center;
+  font-style: inherit;
+  font-family: 'Garamon(d/t)', serif;
+  margin: 16pt 0 24pt;
+  display: block;
+}
+
+.text-source {
+  display: block;
+  margin-top: .25em;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+figure {
+  margin: 0 0 16pt 0;
+}
+
+figcaption { 
+  margin: 8pt 0 0 0;
+  font-size: 8pt;
+  line-height: 1.2;
+  font-family: 'Garamon(d/t)', serif;
+}
